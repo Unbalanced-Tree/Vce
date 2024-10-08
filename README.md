@@ -8,4 +8,4 @@ The first version of Vce contains
 2. collection validator `IsNullOrEmpty` for Generic Lists
 
 
-I plan to add more validators for primitive data types, collection, etc. This repositry is open for contrubation. 
+I plan to add more validators for primitive data types, collection, etc. This repository is open for contributions. 
