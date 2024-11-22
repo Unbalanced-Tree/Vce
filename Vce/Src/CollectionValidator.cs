@@ -2,7 +2,7 @@
 
 namespace Vce
 {
-    public static class CollectionValidatior
+    public static class CollectionValidator
     {
         public static bool IsNullOrEmpty<T>(this List<T> collection)
         {

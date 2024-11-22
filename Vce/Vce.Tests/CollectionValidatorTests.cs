@@ -2,7 +2,7 @@
 
 namespace Vce.Tests
 {
-    public class CollectionValidatiorTests
+    public class CollectionValidatorTests
     {
         [Fact]
         public void Test_IsNullOrEmpty_Generic_List_1()
