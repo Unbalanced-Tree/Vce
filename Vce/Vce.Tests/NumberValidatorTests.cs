@@ -29,8 +29,6 @@
             Assert.Equal(expected, value.IsNullOrZero());
         }
 
-        //xUnit InlineData does not support decimal types directly. 
-
         [Theory]
         [InlineData(null, true)] // Test for null
         [InlineData(0f, true)]   // Test for zero
@@ -47,6 +45,24 @@
         public void Test_IsNullOrZero_Double(double? value, bool expected)
         {
             Assert.Equal(expected, value.IsNullOrZero());
+        }
+
+
+        [Theory]
+        [ClassData(typeof(TestIsNullOrZeroDecimalDataModel))]
+        public void Test_IsNullOrZero_Decimal(decimal? value, bool expected)
+        {
+            Assert.Equal(expected, value.IsNullOrZero());
+        }
+
+        private class TestIsNullOrZeroDecimalDataModel : TheoryData<decimal?, bool>
+        {
+            public TestIsNullOrZeroDecimalDataModel()
+            {
+                this.Add(null, true);
+                this.Add(0.0M, true);
+                this.Add(2.718M, false);
+            }
         }
     }
 }
