@@ -1,3 +1,4 @@
 ﻿.vs/
 bin/
 obj/
+/Vce/Src/Nuget publish.txt

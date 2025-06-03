@@ -6,7 +6,7 @@
 		<PackageId>Vce</PackageId>
 		<Title>Vce</Title>
 		<Description>Vce( Value check extensions). </Description>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<RepositoryUrl>https://github.com/Unbalanced-Tree/Vce</RepositoryUrl>
 		<PackageTags>C#; validators; data-validation;</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
